@@ -1,0 +1,12 @@
+.header {
+  background-color: white;
+}
+.header .img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 15px;
+}/*# sourceMappingURL=main.css.map */
