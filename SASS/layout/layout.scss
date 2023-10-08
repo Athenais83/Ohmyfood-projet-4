@@ -1,13 +1,43 @@
-.header{
+header{
 
     background-color: white;
+    margin-bottom: 10px;
 
-    .img{
+    img{
 
         width: 70%;
-        margin: auto;
         display: block;
+        margin: auto;
+    }
 }
+
+footer{
+
+    background-color: black;
+    color: white;
+
+    div{
+
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
     }
 
+    a{
 
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto';
+    }
+
+    h3{
+
+        font-family: 'Shirkhand';
+        font-size: 18px;
+    }
+
+    i{
+
+        margin-right: 10px;
+    }
+}

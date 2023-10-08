@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="SASS/main.css">
 </head>
 <body>
    <header>
       <img src="Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo de ohmyfood">
-      <div> <i class="fas fa-map-marker-alt icone-localisation"></i> Paris, Belleville </div>
+      <div class="locationbar"> <i class="fas fa-map-marker-alt icone-localisation"></i> Paris, Belleville </div>
    </header>
-   <section>
+   <section class="explore-restaurants">
       <h2>Réservez le menu qui vous convient</h2>
       <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
       <button>Explorer nos restaurants</button>
@@ -27,77 +27,69 @@
    <section class="functioning">
       <h2>Fonctionnement</h2>
       <div>
-         <div>
-            <article>
-               <div>
-                  <div>
+            <article class="card">
+                  <div class="card-content">
                      <i class="fa-solid fa-mobile-screen-button"></i>
                      <h3>Choississez un restaurant</h3>
                   </div>
                </div>
             </article>
-            <article>
-               <div>
-                  <div>
+            <article class="card">
+                  <div class="card-content">
                      <i class="fa-solid fa-list-ul"></i>
                      <h3>Composer votre menu</h3>
                   </div>
-               </div>
             </article>
-            <article>
-               <div>
-                  <div>
-                     <i class="fa-solid fa-store"></i>
+            <article class="card">
+                  <div class="card-content">
+                     <i class="fa-solid fa-store icone-store"></i>
                      <h3>Dégustez au restaurant</h3>
                   </div>
-               </div>
             </article>
          </div>
-      </div>
    </section>
    <section class="restaurant">
       <h2>Restaurants</h2>
       <div>
-         <div>
-            <article>
-               <div>
-                  <div>
+            <article class="card">
+                  <div class="card-img">
                      <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat de la palette du goût">
-                     <h3>La palette du gôut</h3>
-                     <p>Ménilmontant</p>
-                     <i class="fa-solid fa-heart"></i>
+                     <div class="card-txt">
+                       <i class="fa-regular fa-heart"></i>
+                       <h3>La palette du gôut</h3>
+                         <p>Ménilmontant</p> 
+                     </div>
                   </div>
-               </div>
             </article>
-            <article>
-               <div>
-                  <div>
+            <article class="card">
+                  <div class=card-img>
                      <img src="Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat de la note enchantée">
-                     <h3>La note enchantée</h3>
+                     <div class="card-txt"> 
+                      <i class="fa-regular fa-heart"></i>
+                      <h3>La note enchantée</h3>
                      <p>Charonne</p>
-                     <i class="fa-solid fa-heart"></i>
+                     </div>
                   </div>
-               </div>
             </article>
-            <article>
-               <div>
-                  <div>
-                     <img src="Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg " alt="plat a la française">
+            <article class="card">
+                  <div class="card-img">
+                     <img src="Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg " alt="plat a la française">   
+                     <div class="card-txt">
+                      <i class="fa-regular fa-heart"></i> 
                      <h3>A la française</h3>
                      <p>Cité Rouge</p>
-                     <i class="fa-solid fa-heart"></i>
+                    </div> 
                   </div>
-               </div>
             </article>
-            <article>
-               <div>
-                  <div>
+            <article class="card">
+                  <div class="card-img">
                      <img src="Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat le délice des sens">
+                     <div class="card-txt">
+                     <i class="fa-regular fa-heart"></i>
                      <h3>Le délice des sens</h3>
                      <p>Folie-Méricourt</p>
-                     <i class="fa-solid fa-heart"></i>
+                     </div>
                   </div>
-               </div>
             </article>
    </section>
    <footer>

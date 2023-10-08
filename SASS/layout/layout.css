@@ -1,8 +1,31 @@
-.header {
+header {
   background-color: white;
+  margin-bottom: 10px;
 }
-.header .img {
+header img {
   width: 70%;
-  margin: auto;
   display: block;
+  margin: auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+footer h3 {
+  font-family: "Shirkhand";
+  font-size: 18px;
+}
+footer i {
+  margin-right: 10px;
 }/*# sourceMappingURL=layout.css.map */
