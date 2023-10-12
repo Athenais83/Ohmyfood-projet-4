@@ -20,14 +20,12 @@
 
     h2{
 
-        font-family:'roboto';
         font-size: 23px;
         text-align: center;
     }
 
     p{
 
-        font-family: 'roboto';
         font-size: 17px;
         text-align: center;
     }
@@ -39,11 +37,15 @@
     border-radius: 30px;
     background: linear-gradient(0deg,#9356DC,#FF79DA );
     color: white;
-    font-family: 'Roboto';
     border: none;
     font-size: 18px;
     padding: 15px;
 
+    }
+
+    button:hover{
+
+        opacity: 50%;
     }
 }
 
@@ -81,6 +83,28 @@
 
         color:#9356DC;
     }
+
+    span{
+
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    position: absolute;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    }
+
+    div{
+
+        margin: -16px;
+        align-self: center;
+        margin-right: 24px;
+        margin-top: -40px;
+    }
 }
 
 .restaurant{
@@ -117,7 +141,30 @@
 
     i{
         align-self: flex-end;
-        position: absolute;
+        position: relative;
+        top: 40px;
+        right: 40px;
+        font-size: 28px;
+    }
+
+    .card-img{
+
+        .tag{
+
+            position: absolute;
+            background-color: #99E2D0;
+            border: solid 16px #99E2D0;
+            color: #008766;
+            right: 15px;
+            border-radius: 2px;
+
+        }
+    }
+
+    a{
+
+        text-decoration: none;
+        color: black;
     }
 }
 

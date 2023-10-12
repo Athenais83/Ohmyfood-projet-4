@@ -21,6 +21,7 @@ footer{
         display: flex;
         flex-direction: column;
         margin: 10px;
+        padding-bottom: 15px;
     }
 
     a{
@@ -32,8 +33,9 @@ footer{
 
     h3{
 
-        font-family: 'Shirkhand';
+        font-family: 'Shrikhand';
         font-size: 18px;
+        font-weight: 100;
     }
 
     i{
@@ -41,3 +43,4 @@ footer{
         margin-right: 10px;
     }
 }
+

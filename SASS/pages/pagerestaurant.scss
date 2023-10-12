@@ -1,4 +1,15 @@
-header{
+.header-restaurant{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 10px;
+
+    i{
+
+        font-size: 24px;
+        color: black;
+    }
 
     img{
 
@@ -9,9 +20,14 @@ header{
     }
 }
 
-img{
+div{
+
+    img{
 
     width: 100%;
+    height: 275px;
+    object-fit: cover; 
+    }
 
 }
 
@@ -36,6 +52,7 @@ img{
         padding: 5px;
         filter: drop-shadow(0px 3px 15px rgba(0,0,0,0.1));
         margin-bottom: 10px;
+        line-height: 0px;
     }
 
     button{
@@ -45,15 +62,60 @@ img{
         border-radius: 30px;
         background: linear-gradient(0deg,#9356DC,#FF79DA );
         color: white;
-        font-family: 'Roboto';
         border: none;
         font-size: 18px;
         padding: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
         padding-left: 40px;
         padding-right: 40px;
     
+        }
+
+        button:hover{
+
+            opacity: 50%;
+        }
+
+        .card-title{
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        i{
+
+            display: block;
+            margin: auto;
+            font-size: 24px;
+        }
+
+        .type-dish{
+
+            font-weight: 100;
+            border-bottom: solid 2px #99E2D0;
+            width: 15%;
+            font-size: 15px;
+        }
+
+        .card-subtitle{
+
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+        }
+
+        .euro{
+
+            margin: auto;
+            font-weight: bold;
+            position: relative;
+            width: 10%;
+        }
+
+        p{
+
+            width: 90%;
         }
 }
 

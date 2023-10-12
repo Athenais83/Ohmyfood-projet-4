@@ -16,6 +16,7 @@ footer div {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  padding-bottom: 15px;
 }
 footer a {
   color: white;
@@ -23,8 +24,9 @@ footer a {
   font-family: "Roboto";
 }
 footer h3 {
-  font-family: "Shirkhand";
+  font-family: "Shrikhand";
   font-size: 18px;
+  font-weight: 100;
 }
 footer i {
   margin-right: 10px;
