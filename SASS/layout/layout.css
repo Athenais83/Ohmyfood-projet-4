@@ -7,6 +7,11 @@ header img {
   display: block;
   margin: auto;
 }
+@media (min-width: 767.98px) {
+  header img {
+    width: 20%;
+  }
+}
 
 footer {
   background-color: black;
@@ -18,16 +23,41 @@ footer div {
   margin: 10px;
   padding-bottom: 15px;
 }
+@media (min-width: 767.98px) {
+  footer div {
+    flex-direction: row-reverse;
+  }
+}
 footer a {
   color: white;
   text-decoration: none;
   font-family: "Roboto";
+}
+@media (min-width: 767.98px) {
+  footer a {
+    padding-right: 15px;
+  }
 }
 footer h3 {
   font-family: "Shrikhand";
   font-size: 18px;
   font-weight: 100;
 }
+@media (min-width: 767.98px) {
+  footer h3 {
+    padding-top: 37px;
+    margin: 0px;
+    padding-right: 20px;
+  }
+}
 footer i {
   margin-right: 10px;
+}
+@media (min-width: 767.98px) {
+  footer .link-footer {
+    flex-direction: row;
+    padding-top: 40px;
+    margin: 0px;
+    padding-right: 50px;
+  }
 }/*# sourceMappingURL=layout.css.map */

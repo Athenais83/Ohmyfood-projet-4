@@ -13,6 +13,11 @@
   display: block;
   margin: auto;
 }
+@media (min-width: 767.98px) {
+  .header-restaurant img {
+    width: 20%;
+  }
+}
 
 div img {
   width: 100%;
@@ -20,10 +25,22 @@ div img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 767.98px) {
+  div img {
+    height: 350px;
+  }
+}
 
 .map-food {
   background-color: #F6F6F6;
   margin-top: -50px;
+}
+@media (min-width: 767.98px) {
+  .map-food {
+    width: 80%;
+    margin: auto;
+    margin-top: -30px;
+  }
 }
 .map-food .menu {
   background-color: white;
@@ -38,6 +55,13 @@ div img {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-bottom: 10px;
   line-height: 0px;
+}
+@media (min-width: 767.98px) {
+  .map-food .card {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }
 .map-food button {
   display: block;
@@ -60,16 +84,33 @@ div img {
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 767.98px) {
+  .map-food .card-title {
+    width: 70%;
+    margin-left: 270px;
+  }
+}
 .map-food i {
   display: block;
   margin: auto;
   font-size: 24px;
+}
+@media (min-width: 767.98px) {
+  .map-food i {
+    margin-left: 20px;
+  }
 }
 .map-food .type-dish {
   font-weight: 100;
   border-bottom: solid 2px #99E2D0;
   width: 15%;
   font-size: 15px;
+}
+@media (min-width: 767.98px) {
+  .map-food .type-dish {
+    margin-left: 120px;
+    width: 5%;
+  }
 }
 .map-food .card-subtitle {
   display: flex;

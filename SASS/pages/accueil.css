@@ -6,16 +6,27 @@
   font-family: roboto;
   width: 100%;
 }
+@media (min-width: 767.98px) {
+  .locationbar {
+    margin-top: 20px;
+  }
+}
 .locationbar .icone-localisation {
   padding-right: 10px;
 }
 
 .explore-restaurants {
   background-color: #F6F6F6;
+  padding-bottom: 20px;
 }
 .explore-restaurants h2 {
   font-size: 23px;
   text-align: center;
+}
+@media (min-width: 767.98px) {
+  .explore-restaurants h2 {
+    font-size: 40px;
+  }
 }
 .explore-restaurants p {
   font-size: 17px;
@@ -31,6 +42,11 @@
   font-size: 18px;
   padding: 15px;
 }
+@media (min-width: 767.98px) {
+  .explore-restaurants button {
+    margin-top: 20px;
+  }
+}
 .explore-restaurants button:hover {
   opacity: 50%;
 }
@@ -38,12 +54,30 @@
 .functioning {
   background-color: white;
 }
+@media (min-width: 767.98px) {
+  .functioning {
+    margin-left: 250px;
+    width: 100%;
+  }
+}
 .functioning .card {
   background-color: #F6F6F6;
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(Opx 3px 15px rgba(0, 0, 0, 0.1));
   margin: 15px;
+}
+@media (min-width: 767.98px) {
+  .functioning .card {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .card-functioning {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .card-content {
@@ -120,4 +154,25 @@
 .restaurant a {
   text-decoration: none;
   color: black;
+}
+@media (min-width: 767.98px) {
+  .restaurant a {
+    width: 45%;
+  }
+}
+@media (min-width: 767.98px) {
+  .restaurant h2 {
+    margin-left: 70px;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 767.98px) {
+  .restaurant .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }/*# sourceMappingURL=accueil.css.map */
