@@ -16,8 +16,8 @@
 </head>
 <body>
    <header class="header-restaurant">
-    <a href="index.html">
-        <i class="fa-solid fa-arrow-left"></i>
+    <a href="index.html" class="link-return">
+        <i class="fa-solid fa-arrow-left return"></i>
     </a>
       <img src="Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo de ohmyfood">
    </header>
@@ -28,8 +28,12 @@
     <div class="menu">
         <div class="card-title">
             <h1>La palette du goût</h1> 
-            <i class="fa-regular fa-heart"></i>
+            <div class="icon">
+            <i class="fa-regular fa-heart my-heart-empty"></i>
+            <i class="fa-solid fa-heart my-heart-full"></i>
+            </div>
         </div>
+        <div>
         <h2 class="type-dish">ENTREES</h2>
             <article class="card">
                     <div class="card-txt">
@@ -38,7 +42,11 @@
                     <div class="card-subtitle">
                         <p>Au piment d'Espelette</p>
                         <p class="euro">25€</p>
+                    <div class="check">
+                        <i class="fa-regular fa-circle-check valid" ></i>
                     </div>
+                </div>
+                    
             </article>
             <article class="card">
                 <div class="card-txt">
@@ -58,6 +66,8 @@
                         <p class="euro">20€</p>
                     </div>
             </article>
+        </div>
+        <div>
             <h2 class="type-dish">PLATS</h2>
             <article class="card">
                     <div class="card-txt">
@@ -86,6 +96,8 @@
                         <p class="euro">44€</p>
                 </div>
             </article>
+        </div>
+        <div> 
             <h2 class="type-dish">DESSERTS</h2>
             <article class="card">
                     <div class="card-txt">
@@ -114,6 +126,7 @@
                         <p class="euro">23€</p>
                 </div>
             </article>
+        </div>
             <button>Commander</button>
         </div>
     </div>

@@ -120,7 +120,6 @@ footer i {
 }
 @media (min-width: 767.98px) {
   .functioning {
-    margin-left: 250px;
     width: 100%;
   }
 }
@@ -141,6 +140,7 @@ footer i {
   .card-functioning {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -200,14 +200,29 @@ footer i {
   flex-direction: column;
   margin-left: 10px;
 }
-.restaurant i {
+.restaurant .icon {
   align-self: flex-end;
-  position: relative;
-  top: 40px;
+}
+.restaurant i {
+  position: absolute;
+  top: 200px;
   right: 40px;
   font-size: 28px;
 }
-.restaurant .card-img .tag {
+.restaurant .my-heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.restaurant .my-heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card-img .tag {
   position: absolute;
   background-color: #99E2D0;
   border: solid 16px #99E2D0;
@@ -215,23 +230,26 @@ footer i {
   right: 15px;
   border-radius: 2px;
 }
-.restaurant a {
+
+a {
   text-decoration: none;
   color: black;
 }
 @media (min-width: 767.98px) {
-  .restaurant a {
+  a {
     width: 45%;
   }
 }
+
 @media (min-width: 767.98px) {
-  .restaurant h2 {
+  h2 {
     margin-left: 70px;
     padding-top: 30px;
   }
 }
+
 @media (min-width: 767.98px) {
-  .restaurant .card-container {
+  .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,13 +269,17 @@ footer i {
   font-size: 24px;
   color: black;
 }
-.header-restaurant img {
+.header-restaurant .link-return {
+  width: 0%;
+}
+
+img {
   width: 60%;
   display: block;
   margin: auto;
 }
 @media (min-width: 767.98px) {
-  .header-restaurant img {
+  img {
     width: 20%;
   }
 }
@@ -330,7 +352,7 @@ div img {
 @media (min-width: 767.98px) {
   .map-food .card-title {
     width: 70%;
-    margin-left: 270px;
+    margin-left: 300px;
   }
 }
 .map-food i {
@@ -369,6 +391,30 @@ div img {
 .map-food p {
   width: 90%;
 }
+.map-food .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+.map-food i {
+  position: absolute;
+  top: 30px;
+  right: 290px;
+  font-size: 28px;
+}
+.map-food .my-heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.map-food .my-heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 * {
   font-family: "Roboto";
@@ -377,4 +423,31 @@ div img {
 h1 {
   font-family: "Shrikhand";
   font-weight: 100;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.check {
+  background-color: #99E2D0;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  border-radius: 0px 20px 20px 0px;
+  transition-duration: 1.5s;
+  transform: translateX(0px);
+  display: none;
+}
+
+.check:hover {
+  transition-duration: 5s;
+  transform: translateX(0px);
+  animation-duration: 5s;
+  animation-name: fondu;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
