@@ -1,3 +1,5 @@
+
+
 @keyframes fondu{
     from{
         opacity: 0;
@@ -10,18 +12,107 @@
 .check{
     background-color: #99E2D0;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: right;
     border-radius: 0px 20px 20px 0px;
     transition-duration: 1.5s;
-    transform: translateX(0px);
-    display: none;
+    transform: translateX(80px);
 }
 
 .check:hover{
     transition-duration: 5s;
-    transform: translateX(0px);
+    transform: translateX(-20px);
     animation-duration: 5s;
     animation-name: fondu;
-    display: block;
+}
+
+.appearance1{
+
+    animation-name: appearance;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+
+@keyframes appearance{
+    0%{
+        opacity:0;
+    }
+    50%{
+
+    opacity:0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.appearance2{
+
+    animation-name: appearance1;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+@keyframes appearance1{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.appearance3{
+    animation-name: appearance2;
+    animation-delay:3s;
+    animation-duration: 4s;
+}
+
+@keyframes appearance2{
+    0%{
+        opacity:0;
+    }
+
+    50%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.img-loader{
+    width: 30%;
+    margin-top: 150px;
+    border-radius: 50%;
+    background: linear-gradient(#FF79DA,#9356DC);
+}
+
+.loader {
+    width: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    animation-name: fade;
+    animation-delay: 1s;
+    animation-duration: 10s infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade{
+  0%{
+    transform: rotate(0deg) scale(1);
+    opacity: 0;
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
 }
