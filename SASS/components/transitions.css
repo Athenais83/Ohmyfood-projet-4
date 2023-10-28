@@ -1,0 +1,96 @@
+@keyframes fondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.check {
+  background-color: #99E2D0;
+  color: white;
+  text-align: right;
+  border-radius: 0px 20px 20px 0px;
+  transition-duration: 1.5s;
+  transform: translateX(160px);
+  position: absolute;
+  margin: -43px;
+  padding: 24px;
+  right: 122px;
+  opacity: 0;
+}
+
+.card:hover .check {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: translateX(80px);
+  animation-duration: 1s;
+  animation-name: fondu;
+}
+
+.card:hover .euro {
+  left: -50px;
+}
+
+.appearance1 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1s 1.4s linear forwards;
+}
+
+.appearance2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1s 1.8s linear forwards;
+}
+
+.appearance3 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1s 2.2s linear forwards;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.img-loader {
+  width: 30%;
+  margin-top: 150px;
+  border-radius: 50%;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.loader {
+  width: 0%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  animation-name: fade;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    width: 100%;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    width: 100%;
+  }
+}/*# sourceMappingURL=transitions.css.map */

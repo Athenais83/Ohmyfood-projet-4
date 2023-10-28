@@ -53,6 +53,8 @@
 
 .functioning {
   background-color: white;
+  max-width: 100%;
+  margin: auto;
 }
 @media (min-width: 767.98px) {
   .functioning {
@@ -113,7 +115,10 @@
 
 .restaurant {
   background-color: #F6F6F6;
-  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .restaurant .card {
   display: flex;

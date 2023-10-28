@@ -86,23 +86,13 @@ div img {
 }
 .map-food .card-title {
   display: flex;
-  flex-direction: row;
-}
-@media (min-width: 767.98px) {
-  .map-food .card-title {
-    width: 70%;
-    margin-left: 300px;
-  }
+  width: 100%;
+  justify-content: center;
 }
 .map-food i {
   display: block;
   margin: auto;
   font-size: 24px;
-}
-@media (min-width: 767.98px) {
-  .map-food i {
-    margin-left: 20px;
-  }
 }
 .map-food .type-dish {
   font-weight: 100;
@@ -138,8 +128,6 @@ div img {
 }
 .map-food i {
   position: absolute;
-  top: 30px;
-  right: 290px;
   font-size: 28px;
 }
 .map-food .my-heart-full {
