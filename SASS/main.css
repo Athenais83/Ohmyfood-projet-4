@@ -455,25 +455,32 @@ h1 {
 }
 
 .card:hover .euro {
-  left: -50px;
+  left: -70px;
+}
+
+.card:hover + .dish-name {
+  max-width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .appearance1 {
   opacity: 0;
   transform: translateY(-30px);
-  animation: apparition 1s 1.4s linear forwards;
+  animation: apparition 0.5s 1s linear forwards;
 }
 
 .appearance2 {
   opacity: 0;
   transform: translateY(-30px);
-  animation: apparition 1s 1.8s linear forwards;
+  animation: apparition 0.5s 1.2s linear forwards;
 }
 
 .appearance3 {
   opacity: 0;
   transform: translateY(-30px);
-  animation: apparition 1s 2.2s linear forwards;
+  animation: apparition 0.5s 1.4s linear forwards;
 }
 
 @keyframes apparition {
@@ -487,10 +494,15 @@ h1 {
   }
 }
 .img-loader {
-  width: 30%;
+  width: 80%;
   margin-top: 150px;
   border-radius: 50%;
   background: linear-gradient(#FF79DA, #9356DC);
+}
+@media (min-width: 767.98px) {
+  .img-loader {
+    width: 30%;
+  }
 }
 
 .loader {
@@ -504,7 +516,7 @@ h1 {
   z-index: 20;
   animation-name: fade;
   animation-delay: 1s;
-  animation-duration: 10s;
+  animation-duration: 3s;
   animation-timing-function: ease-in;
 }
 
