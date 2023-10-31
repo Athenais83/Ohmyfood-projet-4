@@ -455,14 +455,23 @@ h1 {
 }
 
 .card:hover .euro {
-  left: -70px;
+  left: -30px;
+}
+@media (min-width: 767.98px) {
+  .card:hover .euro {
+    left: -70px;
+  }
 }
 
-.card:hover + .dish-name {
-  max-width: 90%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+@media (max-width: 767.98px) {
+  .card:hover .dish-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 30px;
+    margin: 0;
+    width: 200px;
+  }
 }
 
 .appearance1 {
