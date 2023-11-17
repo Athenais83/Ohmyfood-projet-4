@@ -1,11 +1,16 @@
+body {
+  margin: 0;
+}
+
 header {
   background-color: white;
   margin-bottom: 10px;
 }
 header img {
-  width: 70%;
+  width: 60%;
   display: block;
   margin: auto;
+  margin-top: 20px;
 }
 @media (min-width: 767.98px) {
   header img {
@@ -21,21 +26,24 @@ footer div {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding-bottom: 15px;
 }
 @media (min-width: 767.98px) {
   footer div {
     flex-direction: row-reverse;
+    padding-bottom: 5px;
   }
 }
 footer a {
   color: white;
   text-decoration: none;
   font-family: "Roboto";
+  height: 30px;
 }
 @media (min-width: 767.98px) {
   footer a {
-    padding-right: 15px;
+    font-size: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 footer h3 {
@@ -52,23 +60,29 @@ footer h3 {
 }
 footer i {
   margin-right: 10px;
+  width: 15px;
+  font-weight: 600;
+  height: 30px;
 }
 @media (min-width: 767.98px) {
   footer .link-footer {
     flex-direction: row;
     padding-top: 40px;
     margin: 0px;
-    padding-right: 50px;
+    width: 60%;
+    gap: 45px;
   }
 }
 
 .locationbar {
   background-color: #eaeaea;
   text-align: center;
-  margin: 5px;
   font-size: 20px;
   font-family: roboto;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 @media (min-width: 767.98px) {
   .locationbar {
@@ -82,6 +96,8 @@ footer i {
 .explore-restaurants {
   background-color: #F6F6F6;
   padding-bottom: 20px;
+  padding-top: 5px;
+  margin-top: -10px;
 }
 .explore-restaurants h2 {
   font-size: 23px;
@@ -95,6 +111,7 @@ footer i {
 .explore-restaurants p {
   font-size: 17px;
   text-align: center;
+  color: #353535;
 }
 .explore-restaurants button {
   display: block;
@@ -105,6 +122,7 @@ footer i {
   border: none;
   font-size: 18px;
   padding: 15px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 767.98px) {
   .explore-restaurants button {
@@ -113,29 +131,21 @@ footer i {
 }
 .explore-restaurants button:hover {
   opacity: 50%;
+  box-shadow: 10px 11px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 .functioning {
   background-color: white;
   max-width: 100%;
   margin: auto;
+  padding-left: 10px;
 }
-@media (min-width: 767.98px) {
-  .functioning {
-    width: 100%;
-  }
-}
-.functioning .card {
+
+.card {
   background-color: #F6F6F6;
   border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(Opx 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   margin: 15px;
-}
-@media (min-width: 767.98px) {
-  .functioning .card {
-    padding-right: 30px;
-  }
 }
 
 @media (min-width: 767.98px) {
@@ -150,6 +160,11 @@ footer i {
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 767.98px) {
+  .card-content {
+    padding-right: 30px;
+  }
+}
 .card-content i {
   padding-right: 10px;
   align-self: center;
@@ -160,12 +175,12 @@ footer i {
   color: #9356DC;
 }
 .card-content span {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   background-color: #9356DC;
   color: white;
   border-radius: 20px;
-  padding: 5px;
+  padding: 3px;
   position: absolute;
   padding-left: 7px;
   padding-right: 7px;
@@ -181,8 +196,8 @@ footer i {
   background-color: #F6F6F6;
   max-width: 100%;
   margin: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .restaurant .card {
   display: flex;
@@ -190,7 +205,7 @@ footer i {
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   line-height: 0px;
 }
 .restaurant img {
@@ -246,9 +261,12 @@ a {
   }
 }
 
+h2 {
+  padding-top: 15px;
+}
 @media (min-width: 767.98px) {
   h2 {
-    margin-left: 70px;
+    margin-left: 110px;
     padding-top: 30px;
   }
 }
@@ -259,8 +277,9 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 110px;
+    margin-right: 110px;
+    width: 80%;
   }
 }
 
@@ -313,14 +332,14 @@ div img {
   }
 }
 .map-food .menu {
-  background-color: white;
+  background-color: #F6F6F6;
   border-radius: 20px 20px 0px 0px;
-  padding: 5px;
+  padding: 10px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .map-food .card {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-bottom: 10px;
@@ -336,24 +355,31 @@ div img {
 .map-food button {
   display: block;
   margin: auto;
-  border-radius: 30px;
+  border-radius: 25px;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   color: white;
   border: none;
   font-size: 18px;
-  padding: 10px;
   margin-top: 30px;
   margin-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  width: 186px;
+  height: 50px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .map-food button:hover {
   opacity: 50%;
+  box-shadow: 10px 11px 6px 0px rgb(0, 0, 0);
 }
 .map-food .card-title {
   display: flex;
   width: 100%;
-  justify-content: center;
+}
+@media (min-width: 767.98px) {
+  .map-food .card-title {
+    justify-content: center;
+  }
 }
 .map-food i {
   display: block;
@@ -368,7 +394,7 @@ div img {
 }
 @media (min-width: 767.98px) {
   .map-food .type-dish {
-    margin-left: 120px;
+    margin-left: 150px;
     width: 5%;
   }
 }
@@ -390,7 +416,12 @@ div img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px;
+  margin: 37px;
+}
+@media (min-width: 767.98px) {
+  .map-food .icon {
+    margin: 10px;
+  }
 }
 .map-food i {
   position: absolute;
@@ -410,7 +441,7 @@ div img {
 }
 .map-food .valid {
   position: relative;
-  top: 0px;
+  top: 35%;
   right: 0px;
   font-size: 28px;
 }
@@ -424,34 +455,28 @@ h1 {
   font-weight: 100;
 }
 
-@keyframes fondu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .check {
-  background-color: #99E2D0;
+  background-color: transparent;
   color: white;
   text-align: right;
   border-radius: 0px 20px 20px 0px;
-  transition-duration: 1.5s;
+  transition-duration: 230ms;
   transform: translateX(160px);
   position: absolute;
-  margin: -43px;
-  padding: 24px;
-  right: 122px;
+  right: 75px;
   opacity: 0;
+  top: 0;
+  margin-top: 0;
+  height: 100%;
+  width: 0px;
+  text-align: center;
 }
 
 .card:hover .check {
   opacity: 1;
-  transition-duration: 1s;
+  background-color: #99E2D0;
   transform: translateX(80px);
-  animation-duration: 1s;
-  animation-name: fondu;
+  width: 70px;
 }
 
 .card:hover .euro {

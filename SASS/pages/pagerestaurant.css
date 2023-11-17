@@ -47,14 +47,14 @@ div img {
   }
 }
 .map-food .menu {
-  background-color: white;
+  background-color: #F6F6F6;
   border-radius: 20px 20px 0px 0px;
-  padding: 5px;
+  padding: 10px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .map-food .card {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-bottom: 10px;
@@ -70,24 +70,31 @@ div img {
 .map-food button {
   display: block;
   margin: auto;
-  border-radius: 30px;
+  border-radius: 25px;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   color: white;
   border: none;
   font-size: 18px;
-  padding: 10px;
   margin-top: 30px;
   margin-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  width: 186px;
+  height: 50px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .map-food button:hover {
   opacity: 50%;
+  box-shadow: 10px 11px 6px 0px rgb(0, 0, 0);
 }
 .map-food .card-title {
   display: flex;
   width: 100%;
-  justify-content: center;
+}
+@media (min-width: 767.98px) {
+  .map-food .card-title {
+    justify-content: center;
+  }
 }
 .map-food i {
   display: block;
@@ -102,7 +109,7 @@ div img {
 }
 @media (min-width: 767.98px) {
   .map-food .type-dish {
-    margin-left: 120px;
+    margin-left: 150px;
     width: 5%;
   }
 }
@@ -124,7 +131,12 @@ div img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px;
+  margin: 37px;
+}
+@media (min-width: 767.98px) {
+  .map-food .icon {
+    margin: 10px;
+  }
 }
 .map-food i {
   position: absolute;
@@ -144,7 +156,7 @@ div img {
 }
 .map-food .valid {
   position: relative;
-  top: 0px;
+  top: 35%;
   right: 0px;
   font-size: 28px;
 }/*# sourceMappingURL=pagerestaurant.css.map */

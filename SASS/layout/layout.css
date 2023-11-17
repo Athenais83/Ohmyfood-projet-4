@@ -1,11 +1,16 @@
+body {
+  margin: 0;
+}
+
 header {
   background-color: white;
   margin-bottom: 10px;
 }
 header img {
-  width: 70%;
+  width: 60%;
   display: block;
   margin: auto;
+  margin-top: 20px;
 }
 @media (min-width: 767.98px) {
   header img {
@@ -21,21 +26,24 @@ footer div {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding-bottom: 15px;
 }
 @media (min-width: 767.98px) {
   footer div {
     flex-direction: row-reverse;
+    padding-bottom: 5px;
   }
 }
 footer a {
   color: white;
   text-decoration: none;
   font-family: "Roboto";
+  height: 30px;
 }
 @media (min-width: 767.98px) {
   footer a {
-    padding-right: 15px;
+    font-size: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 footer h3 {
@@ -52,12 +60,16 @@ footer h3 {
 }
 footer i {
   margin-right: 10px;
+  width: 15px;
+  font-weight: 600;
+  height: 30px;
 }
 @media (min-width: 767.98px) {
   footer .link-footer {
     flex-direction: row;
     padding-top: 40px;
     margin: 0px;
-    padding-right: 50px;
+    width: 60%;
+    gap: 45px;
   }
 }/*# sourceMappingURL=layout.css.map */

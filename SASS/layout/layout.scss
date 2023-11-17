@@ -1,3 +1,8 @@
+body{
+
+    margin: 0;
+}
+
 header{
 
     background-color: white;
@@ -5,9 +10,10 @@ header{
 
     img{
 
-        width: 70%;
+        width: 60%;
         display: block;
         margin: auto;
+        margin-top: 20px;
 
         @media (min-width: 767.98px){
             width: 20%;
@@ -25,10 +31,10 @@ footer{
         display: flex;
         flex-direction: column;
         margin: 10px;
-        padding-bottom: 15px;
 
         @media (min-width: 767.98px){
             flex-direction: row-reverse;
+            padding-bottom: 5px;
         } 
     }
 
@@ -37,9 +43,11 @@ footer{
         color: white;
         text-decoration: none;
         font-family: 'Roboto';
+        height: 30px;
 
         @media (min-width: 767.98px){
-            padding-right: 15px;
+            font-size: 15px;
+            width: fit-content;
         } 
     }
 
@@ -59,6 +67,9 @@ footer{
     i{
 
         margin-right: 10px;
+        width: 15px;
+        font-weight: 600;
+        height: 30px;
     }
 
     .link-footer{
@@ -66,7 +77,8 @@ footer{
             flex-direction: row;
             padding-top: 40px;
             margin: 0px;
-            padding-right: 50px;
+            width: 60%;
+            gap: 45px;
         } 
     }
 }
