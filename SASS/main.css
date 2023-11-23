@@ -470,12 +470,14 @@ h1 {
   height: 100%;
   width: 0px;
   text-align: center;
+  display: none;
 }
 
 .card:hover .check {
   opacity: 1;
   background-color: #99E2D0;
   transform: translateX(80px);
+  display: block;
   width: 70px;
 }
 
