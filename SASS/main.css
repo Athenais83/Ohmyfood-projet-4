@@ -130,8 +130,8 @@ footer i {
   }
 }
 .explore-restaurants button:hover {
-  opacity: 50%;
-  box-shadow: 10px 11px 6px 0px rgb(0, 0, 0);
+  opacity: 80%;
+  box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .functioning {
@@ -369,8 +369,8 @@ div img {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .map-food button:hover {
-  opacity: 50%;
-  box-shadow: 10px 11px 6px 0px rgb(0, 0, 0);
+  opacity: 80%;
+  box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .map-food .card-title {
   display: flex;
