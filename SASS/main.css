@@ -336,6 +336,7 @@ div img {
   border-radius: 20px 20px 0px 0px;
   padding: 10px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
 }
 .map-food .card {
   background-color: white;
@@ -460,7 +461,6 @@ h1 {
   color: white;
   text-align: right;
   border-radius: 0px 20px 20px 0px;
-  transition-duration: 230ms;
   transform: translateX(160px);
   position: absolute;
   right: 75px;
@@ -470,15 +470,14 @@ h1 {
   height: 100%;
   width: 0px;
   text-align: center;
-  display: none;
 }
 
 .card:hover .check {
   opacity: 1;
   background-color: #99E2D0;
   transform: translateX(80px);
-  display: block;
-  width: 70px;
+  transition-duration: 500ms;
+  width: 60px;
 }
 
 .card:hover .euro {
